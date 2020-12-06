@@ -40,14 +40,26 @@
 
 	<properties>
 
-		<!-- Java release : Java 15 -->
-		<maven.compiler.release>15</maven.compiler.release>
+		<!-- Java release : Java 11 -->
+		<maven.compiler.release>11</maven.compiler.release>
 
 		<!-- File encoding is UTF-8 -->
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
+
+	<dependencies>
+
+		<!-- Amazon Alexa dependency : All standard SDK components -->
+		<!-- https://developer.amazon.com/en-US/docs/alexa/alexa-skills-kit-sdk-for-java/set-up-the-sdk.html -->
+		<dependency>
+			<groupId>com.amazon.alexa</groupId>
+			<artifactId>ask-sdk</artifactId>
+			<version>2.20.2</version>
+		  </dependency>
+
+	</dependencies>
 
 	<build>
 
